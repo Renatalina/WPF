@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\bin\Debug\WPFExam.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\bin\Debug\WPFExam.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\bin\Debug\WPFExam.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFExam\WPFExam\obj\Debug\WPFExam.pdb

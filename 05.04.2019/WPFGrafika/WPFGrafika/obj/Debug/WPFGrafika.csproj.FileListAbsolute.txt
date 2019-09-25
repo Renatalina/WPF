@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\bin\Debug\WPFGrafika.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\bin\Debug\WPFGrafika.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\bin\Debug\WPFGrafika.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFGrafika\WPFGrafika\obj\Debug\WPFGrafika.pdb

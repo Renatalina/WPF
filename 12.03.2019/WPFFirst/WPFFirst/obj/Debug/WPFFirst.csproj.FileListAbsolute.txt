@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\bin\Debug\WPFFirst.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\bin\Debug\WPFFirst.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\bin\Debug\WPFFirst.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFFirst\WPFFirst\obj\Debug\WPFFirst.pdb

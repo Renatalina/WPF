@@ -1,0 +1,78 @@
+https://meet.google.com/vnm-cocp-kfy
+
+
+ <ControlTemplate x:Key="RoundButtonTemplate" TargetType="{x:Type Button}">
+            <Grid x:Name="grid">
+                <Ellipse x:Name="ellipse" Fill="{TemplateBinding Background}"/>
+                
+                <Rectangle Name="focus" Height="25" Width="90" Visibility="Hidden" Stroke="Black" StrokeThickness="1" StrokeDashArray="1 2" />
+                
+                <Label x:Name="label" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" Content="{TemplateBinding Content}"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter TargetName="ellipse" Property="Fill" Value="Navy"/>
+                    <Setter TargetName="label" Property="Foreground" Value="Yellow"/>
+                    <Setter TargetName="grid" Property="Cursor" Value="Hand"/>
+                </Trigger>
+                
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="grid" Property="RenderTransformOrigin" Value="0.5 0.5"/>
+                    <Setter TargetName="grid" Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+
+                <Trigger Property="IsKeyboardFocused" Value="true">
+                    <Setter TargetName="focus" Property="Visibility" Value="Visible"/>
+                </Trigger>
+                
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+        <Style x:Key="RoundButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="20"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="grid">
+                            <Ellipse x:Name="ellipse" Fill="{TemplateBinding Background}"/>
+
+                            <Rectangle Name="focus" Height="25" Width="90" Visibility="Hidden" Stroke="Black" StrokeThickness="1" StrokeDashArray="1 2" />
+
+                            <Label x:Name="label" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="ellipse" Property="Fill" Value="Navy"/>
+                                <Setter TargetName="label" Property="Foreground" Value="Yellow"/>
+                                <Setter TargetName="grid" Property="Cursor" Value="Hand"/>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="grid" Property="RenderTransformOrigin" Value="0.5 0.5"/>
+                                <Setter TargetName="grid" Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter TargetName="focus" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>

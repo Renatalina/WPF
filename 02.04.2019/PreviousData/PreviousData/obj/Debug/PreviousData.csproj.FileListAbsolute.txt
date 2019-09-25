@@ -1,0 +1,13 @@
+G:\Projects\PreviousData\PreviousData\bin\Debug\PreviousData.exe.config
+G:\Projects\PreviousData\PreviousData\bin\Debug\PreviousData.exe
+G:\Projects\PreviousData\PreviousData\bin\Debug\PreviousData.pdb
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.csprojResolveAssemblyReference.cache
+G:\Projects\PreviousData\PreviousData\obj\Debug\MainWindow.baml
+G:\Projects\PreviousData\PreviousData\obj\Debug\MainWindow.g.cs
+G:\Projects\PreviousData\PreviousData\obj\Debug\App.g.cs
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData_MarkupCompile.cache
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.g.resources
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.Properties.Resources.resources
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.csproj.GenerateResource.Cache
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.exe
+G:\Projects\PreviousData\PreviousData\obj\Debug\PreviousData.pdb

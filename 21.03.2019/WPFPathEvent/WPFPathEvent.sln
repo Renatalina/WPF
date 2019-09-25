@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPathEvent", "WPFPathEvent\WPFPathEvent.csproj", "{7751DAE6-62D3-496D-943D-E6E952F66482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7751DAE6-62D3-496D-943D-E6E952F66482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7751DAE6-62D3-496D-943D-E6E952F66482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7751DAE6-62D3-496D-943D-E6E952F66482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7751DAE6-62D3-496D-943D-E6E952F66482}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB39EEAE-7288-4B07-A28F-9BF4EEB47332}
+	EndGlobalSection
+EndGlobal

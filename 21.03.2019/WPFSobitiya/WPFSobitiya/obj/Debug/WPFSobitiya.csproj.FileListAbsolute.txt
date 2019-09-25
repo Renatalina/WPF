@@ -1,0 +1,16 @@
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\bin\Debug\WPFSobitiya.exe.config
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\bin\Debug\WPFSobitiya.exe
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\bin\Debug\WPFSobitiya.pdb
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.csprojResolveAssemblyReference.cache
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\MainWindow.g.cs
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\App.g.cs
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya_MarkupCompile.cache
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya_MarkupCompile.lref
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\MainWindow.baml
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.g.resources
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.Properties.Resources.resources
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.csproj.GenerateResource.cache
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.csproj.CoreCompileInputs.cache
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.exe
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\WPFSobitiya.pdb
+c:\users\висковатых.наталия\source\repos\WPFSobitiya\WPFSobitiya\obj\Debug\GeneratedInternalTypeHelper.g.cs

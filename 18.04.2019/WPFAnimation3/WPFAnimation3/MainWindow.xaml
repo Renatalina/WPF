@@ -1,0 +1,206 @@
+﻿<Window x:Class="WPFAnimation3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAnimation3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        <FlowDocumentReader>
+            --><!--<FlowDocumentPageViewer>-->
+            <!--<FlowDocumentScrollViewer IsToolBarVisible="True" 
+                                  MinZoom="10" MaxZoom="200" Zoom="100" ZoomIncrement="5">--><!--
+            <FlowDocument IsOptimalParagraphEnabled="True" ColumnWidth="150" ColumnGap="25">
+                <Paragraph FontSize="18" FontWeight="Bold" Foreground="DeepPink">
+                    <Run>
+                        Сочинение на тему «Кем я хочу стать когда я буду большим»
+Тарас 7 лет
+
+Я хочу стать программистом, когда выросту большим, потому что это классная работа и простая. Поэтому в наше время столько программистов и все время становится больше. 
+
+Программистам не нужно ходить в школу, им нужно учиться читать на компьютерном языке, что бы они могли с компьютером разговаривать. Думаю, что они должны уметь читать тоже, что бы знать в чем дело, когда все напереполох. 
+
+Программисты должны быть смелыми, что бы не пугаться, когда все перепуталось так что никто не разберет, или если придется разговаривать на английском языке по-иностранному, что бы знать, что надо делать. 
+
+У программистов должно быть хорошее зрение, что бы видеть сквозь одежду и что бы не бояться секретарш, потому что с ними приходиться работать. 
+
+Еще мне нравитса зарплата, которую программисты получают. Они получают столько денег, что не успевают их все тратить. Это происходит потому, что все считают работу программиста трудной, кроме программистов, которые знают, как это просто. 
+
+Нет ничего такого, что бы мне не понравилось, кроме того что девочкам нравятся программисты и все хотят выйти за них замуж, и поэтому женщин надо гнать, что бы не мешали работать. 
+
+Надеюсь, что у меня нет аллергии на офисную пыль, потому что на нашу собаку у меня аллергия. Eсли у меня будет аллергия на офисную пыль, программиста из меня не получится и придется искать настоящую работу.
+                    </Run>
+                </Paragraph>
+                <Paragraph>
+                    <Run>
+                        Taras 7 old
+                    </Run>
+                    <LineBreak/>
+                </Paragraph>
+            </FlowDocument>
+            --><!--</FlowDocumentScrollViewer>-->
+            <!--</FlowDocumentPageViewer>--><!--
+        </FlowDocumentReader>
+    </Grid>-->
+
+    <!--<FlowDocumentScrollViewer>
+        <FlowDocument>
+
+            <Paragraph>Требования:</Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph>C#,WPF,ADO.NET</Paragraph>
+                </ListItem>
+
+                <ListItem>
+                    <Paragraph>Комуникабельность</Paragraph>
+                </ListItem>
+            </List>
+
+            <Paragraph>Умения:</Paragraph>
+            <List MarkerStyle="Decimal">
+                <ListItem>
+                    <Paragraph>Пользоваться ножом и вилкой</Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>Windows,Linux</Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>Всякий текст</Paragraph>
+                </ListItem>
+            </List>
+
+            <Paragraph>Умения:</Paragraph>
+            <List MarkerStyle="Square" MarkerOffset="50">
+                <ListItem>
+                    <Paragraph>Пользоваться ножом и вилкой</Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>Windows,Linux</Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>Всякий текст</Paragraph>
+                </ListItem>
+            </List>
+
+        </FlowDocument>
+    </FlowDocumentScrollViewer>-->
+
+    <!--<FlowDocumentPageViewer>
+        <FlowDocument>
+            <Paragraph>
+                <Run Foreground="Blue">Города Украины</Run>
+            </Paragraph>
+            <Table FontSize="12">
+                <TableRowGroup>
+                    <TableRow FontWeight="bold">
+                        <TableCell>
+                            <Paragraph>№</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>Имя</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>Население</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>КОД</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell>
+                            <Paragraph>1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>Киев</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>2 600 000</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>+38(044)XXXXXXX</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+            </Table>
+        </FlowDocument>
+    </FlowDocumentPageViewer>-->
+
+
+    <!--<FlowDocumentScrollViewer>
+        <FlowDocument Background="YellowGreen">
+            <Section Background="Yellow">
+                <Paragraph>xxx - На выходных занят?</Paragraph>
+                <Paragraph>yyy - Да агрофитнесс!</Paragraph>
+                <Paragraph></Paragraph>
+                <Paragraph>xxx: мне вон каждый раз хочется спросить одних клиентов, зачем они покупают нечетное количество коннекторов на витую пару</Paragraph>
+                <Paragraph></Paragraph>
+                <Paragraph>xxx: Я изменяла ему пару раз, но это был единственный раз в жизни!</Paragraph>
+            </Section>
+            <Section Background="Yellow">
+                <Paragraph>
+                    <Hyperlink NavigateUri="www.bash.org" Click="Hyperlink_Click">Bash.org</Hyperlink>
+                </Paragraph>
+            </Section>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>-->
+    
+    <!--<FlowDocumentScrollViewer>
+        <FlowDocument>
+            <Paragraph>Меня зовут
+                <InlineUIContainer>
+                    <TextBox Width="100"></TextBox>
+                </InlineUIContainer>
+                мне
+                <InlineUIContainer>
+                    <TextBox Width="30"></TextBox>
+                </InlineUIContainer>
+                лет!
+            </Paragraph>
+
+            <Paragraph>Я
+                <InlineUIContainer>
+                    <ComboBox Width="100">
+                        <ComboBoxItem>Буду</ComboBoxItem>
+                        <ComboBoxItem>Не буду</ComboBoxItem>
+                    </ComboBox>
+                </InlineUIContainer> учиться на
+                <InlineUIContainer>
+                    <Slider Name="slider1" Minimum="1" Maximum="12" Width="200"></Slider>
+                </InlineUIContainer>
+            </Paragraph>
+
+        </FlowDocument>
+    </FlowDocumentScrollViewer>-->
+
+    <FlowDocumentScrollViewer>
+        <FlowDocument IsOptimalParagraphEnabled="True">
+            <Paragraph FontSize="24" FontWeight="BOLD">Устройство компьютера в картинках</Paragraph>
+            <Paragraph>
+                <Floater Width="100" HorizontalAlignment="Left">
+                    <BlockUIContainer>
+                        <Image Source="Apollo.JPG"></Image>
+                    </BlockUIContainer>
+                </Floater>
+                Сочинение на тему «Кем я хочу стать когда я буду большим»
+Тарас 7 лет
+
+Я хочу стать программистом, когда выросту большим, потому что это классная работа и простая. Поэтому в наше время столько программистов и все время становится больше. 
+
+Программистам не нужно ходить в школу, им нужно учиться читать на компьютерном языке, что бы они могли с компьютером разговаривать. Думаю, что они должны уметь читать тоже, что бы знать в чем дело, когда все напереполох. 
+
+Программисты должны быть смелыми, что бы не пугаться, когда все перепуталось так что никто не разберет, или если придется разговаривать на английском языке по-иностранному, что бы знать, что надо делать. 
+
+У программистов должно быть хорошее зрение, что бы видеть сквозь одежду и что бы не бояться секретарш, потому что с ними приходиться работать. 
+
+Еще мне нравитса зарплата, которую программисты получают. Они получают столько денег, что не успевают их все тратить. Это происходит потому, что все считают работу программиста трудной, кроме программистов, которые знают, как это просто. 
+
+Нет ничего такого, что бы мне не понравилось, кроме того что девочкам нравятся программисты и все хотят выйти за них замуж, и поэтому женщин надо гнать, что бы не мешали работать. 
+
+Надеюсь, что у меня нет аллергии на офисную пыль, потому что на нашу собаку у меня аллергия. Eсли у меня будет аллергия на офисную пыль, программиста из меня не получится и придется искать настоящую работу.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+
+</Window>

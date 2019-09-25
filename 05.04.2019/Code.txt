@@ -1,0 +1,193 @@
+https://meet.google.com/twt-owzd-duf
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+   // Наш единственный рисующий визуальный объект 
+  private DrawingVisual rectVisual = new DrawingVisual();
+  private const int NumberOfVisualItems = 1;
+
+  public MainWindow()
+  {
+   InitializeComponent();
+   CreateRectVisual();// Вспомогательная функция для создания прямоугольника 
+  }
+  private void CreateRectVisual()
+  {
+   using (DrawingContext drawCtx = rectVisual.RenderOpen())
+   {
+     
+// Верхняя, левая, нижняя и правая позиции прямоугольника 
+    Rect rect = new Rect(50, 50, 105, 55);
+    drawCtx.DrawRectangle(Brushes.AliceBlue, new Pen(Brushes.Blue, 5), rect);
+
+drawCtx.DrawText(
+                     new FormattedText("Hello", CultureInfo.GetCultureInfo("en-us"),
+                     FlowDirection.LeftToRight, new Typeface("Verdana"),
+                     32, Brushes.Tomato), new Point(60, 60));
+
+   }
+
+    // Зарегистрируем наш визуальный элемент в дереве объектов, чтобы 
+// гарантировать поддержку маршрутизируемых событий, проверку попадания и 
+   AddVisualChild(rectVisual);
+   AddLogicalChild(rectVisual);
+  }
+
+   // Необходимые переопределения. Графическая система WPF вызовет 
+// это для определения того, сколько элементов надо визуализировать, 
+//и что именно в них визуализировать. 
+  protected override int VisualChildrenCount
+  {
+   get { return NumberOfVisualItems; }
+  }
+
+  protected override Visual GetVisualChild(int index)
+  {
+    // Нумерация элементов в коллекции начинается с нуля, поэтому вычитаем 1. 
+   if (index != (NumberOfVisualItems - 1))
+    throw new ArgumentOutOfRangeException("index", "Don't have that visual!");
+   return rectVisual;
+  }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Canvas Width="85" Height="50">
+    <Polygon Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="0" Canvas.Top="75"  FillRule="EvenOdd" Points="5,200 68,70 110,200 0,125 135, 125">
+    </Polygon>
+</Canvas>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Rectangle Fill="Yellow" Stroke="Blue" Width="100" Height="50" />
+
+        <Path Fill="Yellow" Stroke="Blue">
+            <Path.Data>
+                <RectangleGeometry Rect="0,0 100, 50">
+                </RectangleGeometry>
+            </Path.Data>
+        </Path>
+
+------------------------------------------------------------------------------------------------
+
+        <Line Stroke="Blue" X1="0" Y1="0" X2="10" Y2="100" />
+
+        <Path Fill="Yellow" Stroke="Blue">
+            <Path.Data>
+                <LineGeometry StartPoint="0,0" EndPoint="10,100">
+                </LineGeometry>
+            </Path.Data>
+        </Path>
+
+--------------------------------------------------------------------------------------------------
+
+        <Ellipse Fill="Yellow" Stroke="Blue" Width="100" Height="50" HorizontalAlignment="Left"></Ellipse>
+
+        <Path Fill="Yellow" Stroke="Blue">
+            <Path.Data>
+                <EllipseGeometry RadiusX="50" RadiusY="25" Center="50,25">
+
+                </EllipseGeometry>
+            </Path.Data>
+        </Path>
+
+-------------------------------------------------------------------------------------------------
+
+        <Path Fill="Yellow" Stroke="Blue" Margin="5">
+            <Path.Data>
+                <GeometryGroup>
+                    <RectangleGeometry Rect="0,0 100,100">
+            </RectangleGeometry>
+            <EllipseGeometry Center="50,50" RadiusX="35" RadiusY="25"></EllipseGeometry>
+            </GeometryGroup>
+            </Path.Data>
+        </Path>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Viewbox>
+    <Canvas Width="500" Height="500">
+        <Polygon Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="0" Canvas.Top="75"  FillRule="Nonzero" Points="5,200 68,70 110,200 0,125 135,125">
+        </Polygon>
+    </Canvas>
+</Viewbox>
+
+
+
+--------------------------------------------------------------------------------------------------
+
+<-- Элипс в прямоугольнике -->
+
+<Path Fill="Yellow" Stroke="Blue" Margin="5">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0 100, 100"></RectangleGeometry>
+                        </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                            <EllipseGeometry Center="85,50" RadiusX="65" RadiusY="35"></EllipseGeometry>
+                        </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Rectangle Height="25" Width="37" Stroke="Blue" 
+      StrokeThickness="2" Fill="LightBlue" Canvas.Left="7" Canvas.Top="20" >
+  <Rectangle.RenderTransform>
+    <RotateTransform Angle="45" />
+  </Rectangle.RenderTransform>
+</Rectangle>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Rectangle Height="25" Width="37" Stroke="Blue" StrokeThickness="2" Fill="LightBlue" Canvas.Left="7" Canvas.Top="20" RenderTransformOrigin="0.5, 0.5" >
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="45" />
+          </Rectangle.RenderTransform>
+    </Rectangle>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <Rectangle Height="25" Width="37" Stroke="Blue" StrokeThickness="2" Fill="LightBlue" Canvas.Left="7" Canvas.Top="20" RenderTransformOrigin="0.5, 0.5" Name="rect">
+        </Rectangle>
+
+        <Button Height="25" Width="37" Margin="122,109,634,285" Click="Button_Click" />
+
+--------------------------------------------------------------------------------------------
+
+        double angle = 10;
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            rect.RenderTransform = new RotateTransform(angle += 5);
+        }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<-- Знак -->
+
+        <Path Fill="Red" Stroke="Black">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <CombinedGeometry GeometryCombineMode="Exclude">
+                            <CombinedGeometry.Geometry1>
+                                <EllipseGeometry Center="60,60" RadiusX="50" RadiusY="50" />
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry Center="60,60" RadiusX="40" RadiusY="40" />
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="44,5 10,90">
+                            <RectangleGeometry.Transform>
+                                <RotateTransform Angle="45" CenterX="45" CenterY="70" />
+                            </RectangleGeometry.Transform>
+                        </RectangleGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>

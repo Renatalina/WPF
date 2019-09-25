@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTemplate", "WPFTemplate\WPFTemplate.csproj", "{B9CF06A8-042A-40FD-ACAF-A4A9B878DEC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9CF06A8-042A-40FD-ACAF-A4A9B878DEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CF06A8-042A-40FD-ACAF-A4A9B878DEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CF06A8-042A-40FD-ACAF-A4A9B878DEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CF06A8-042A-40FD-ACAF-A4A9B878DEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC141EDD-6C05-4C4C-ABFD-5CA0DED250B4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,146 @@
+https://meet.google.com/hxh-eudm-msx
+
+-------------------------------------------------------------------
+
+<Window.Resources>
+        <Style x:Key="StyleHover">
+            <Style.Setters>
+                <Setter Property="Control.Background" Value="Yellow" />
+            </Style.Setters>
+
+            <Style.Triggers>
+                <Trigger Property="Control.IsFocused" Value="True">
+                    <Setter Property="Control.Background" Value="Red" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Button Content="Нажми" BorderThickness="50" Style="{StaticResource StyleHover}"/>
+        <Button Content="Нажми" BorderThickness="50"/>
+        <TextBox Style="{StaticResource StyleHover}">
+            Нажми на меня.
+        </TextBox>
+    </StackPanel>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <Grid>
+        <TextBlock Text="Здравствуйте, стилисты!" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="Blue"></Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="Red" />
+                            <Setter Property="TextDecorations" Value="Underline" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Window.Resources>
+    <Style x:Key="BigFontButton">
+        <Style.Setters>
+            <!--...-->
+        </Style.Setters>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="Control.IsFocused" Value="True" />
+                    <Condition Property="Control.IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Control.Foreground" Value="DarkRed" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+</Window.Resources>    
+<Grid>
+    <Button Content="Кнопка" Height="80" Width="100" Style="{StaticResource BigFontButton}" />
+</Grid>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<StackPanel>
+    <StackPanel.Resources>
+        <Style x:Key="normal">
+            <Setter Property="Control.FontSize" Value="24" />
+            <Setter Property="Control.HorizontalAlignment" Value="Center" />
+            <Setter Property="Control.Margin" Value="24" />
+            <Style.Triggers>
+                <Trigger Property="Button.IsPressed" Value="True">
+                    <Setter Property="Control.Foreground" Value="Red" />
+                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="Control.IsMouseOver" Value="True" />
+                        <Condition Property="Button.IsPressed" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Control.FontStyle" Value="Italic" />
+                    <Setter Property="Control.Foreground" Value="Blue" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </StackPanel.Resources>
+    <Button Style="{StaticResource normal}" Content="Нажми кнопку" Padding="10" />
+</StackPanel>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <CheckBox Name="cbSample" Content="Hello, world?" />
+    <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="48">
+        <TextBlock.Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="Text" Value="No" />
+                <Setter Property="Foreground" Value="Red" />
+                <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbSample, Path=IsChecked}" Value="True">
+                        <Setter Property="Text" Value="Yes!" />
+                        <Setter Property="Foreground" Value="Green" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </TextBlock.Style>
+    </TextBlock>
+</StackPanel>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Window.Resources>
+    <Style x:Key="BigButtonStyle">
+      <Style.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter"> 
+          <EventTrigger.Actions> 
+            <BeginStoryboard> 
+              <Storyboard> 
+                <DoubleAnimation Duration="0:0:0.4" Storyboard.TargetProperty="FontSize" To="22" />
+              </Storyboard> 
+             </BeginStoryboard> 
+          </EventTrigger.Actions> 
+        </EventTrigger>
+
+<EventTrigger RoutedEvent="Mouse.MouseLeave">
+     <EventTrigger.Actions>
+         <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimation Duration="0:0:2" Storyboard.TargetProperty="FontSize" />
+            </Storyboard>
+         </BeginStoryboard>
+     </EventTrigger.Actions>
+</EventTrigger>
+
+       </Style.Triggers>
+    </Style>
+</Window.Resources>
+  
+  <StackPanel>
+    <Button Content="Наведи курсор" BorderThickness="50" Style="{StaticResource BigButtonStyle}"/>
+    <Button Content="Наведи курсор" BorderThickness="50" Style="{StaticResource BigButtonStyle}"/>
+  </StackPanel>

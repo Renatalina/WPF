@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFResource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFResource"
+        mc:Ignorable="d"
+        Name="Wnd"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <SolidColorBrush x:Key="ButtonBrush" Color="#622435"/>
+    </Window.Resources>
+    <StackPanel>
+        <Button Background="{StaticResource ButtonBrush}" Margin="5"
+                Content="StaticWindowResource"/>
+        <Button Margin="5" Content="StaticButtonResource">
+            <Button.Resources>
+                <SolidColorBrush x:Key="ButtonBrush" Color="#896745"/>
+            </Button.Resources>
+            <Button.Background>
+                <StaticResource ResourceKey="ButtonBrush"/>
+            </Button.Background>
+        </Button>
+        <Button Background="{DynamicResource ButtonBrush}" Margin="5"
+                Content="DynamicWindowResource"/>
+        <Button Background="{StaticResource AppButtonBrush}"
+                Foreground="{StaticResource AppButtonColor}" 
+                Name="btnChange" Width="100" Content="ChangeBrush"
+                Click="btnChange_Click"/>
+        <Button Height="100" Width="100"  Content="First" Background="{StaticResource Image1}" Foreground="{StaticResource Image1}"/>
+        <Button Height="100" Width="100" Content="Second" Background="{StaticResource Image2}" Foreground="{StaticResource Image2}"/>
+        <!--<Image Source="Images/fon.png" />-->
+        <!--<Image Source="pack://application:,,,/Images/fon.png"/>-->
+        <Image Name="Img1"/>
+    </StackPanel>
+</Window>

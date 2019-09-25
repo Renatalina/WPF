@@ -1,0 +1,17 @@
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\bin\Debug\WpfBinding.exe.config
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\bin\Debug\WpfBinding.exe
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\bin\Debug\WpfBinding.pdb
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\MainWindow.g.cs
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\App.g.cs
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding_MarkupCompile.cache
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding_MarkupCompile.lref
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\MainWindow.baml
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.g.resources
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.Properties.Resources.resources
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.csproj.GenerateResource.cache
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.exe
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\WpfBinding.pdb
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Задерей.Юрий\source\repos\WpfBinding\WpfBinding\obj\Debug\ObjectBinding.g.cs

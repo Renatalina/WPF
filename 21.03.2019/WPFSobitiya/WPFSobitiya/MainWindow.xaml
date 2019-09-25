@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFSobitiya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSobitiya"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal">
+            <Button Name="Font_8"   Content="Window Font 8" Click="Font_Click"/>
+            <Button Name="Font_11"  Margin="240,0,240,0" Content="Window Font 11" Click="Font_Click"/>
+            <Button Name="Font_14" Content="Window Font 14" Click="Font_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" Margin="0 40" 
+                    Button.Click="Window_Click">
+            <Button Name="Button_8"   Content="Button Font 8" />
+            <Button Name="Button_11"  Margin="240,0,240,0" Content="Button Font 11" />
+            <Button Name="Button_14" Content="Button Font 14" />
+        </StackPanel>
+        <local:SpaceButton Grid.Row="2" Grid.Column="0" Text="Button space 0" Space="0" Click="SpaceButton_Click"/>
+        <local:SpaceButton Grid.Row="2" Grid.Column="1" Text="Button space 1" Space="1" />
+        <local:SpaceButton Grid.Row="2" Grid.Column="2" Text="Button space 2" Space="2" />
+        
+        <local:SpaceButton Grid.Row="3" Grid.Column="0" Text="Window space 0" Tag="0" Click="SpaceWindow_Click"/>
+        <local:SpaceButton Grid.Row="3" Grid.Column="1" Text="Window space 1" Tag="1" Click="SpaceWindow_Click"/>
+        <local:SpaceButton Grid.Row="3" Grid.Column="2" Text="Window space 2" Tag="2" Click="SpaceWindow_Click"/>
+    </Grid>
+</Window>

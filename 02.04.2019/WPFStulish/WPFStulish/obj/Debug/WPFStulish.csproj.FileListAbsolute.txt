@@ -1,0 +1,15 @@
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\bin\Debug\WPFStulish.exe.config
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\bin\Debug\WPFStulish.exe
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\bin\Debug\WPFStulish.pdb
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.csprojResolveAssemblyReference.cache
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\MainWindow.g.cs
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\App.g.cs
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish_MarkupCompile.cache
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish_MarkupCompile.lref
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\MainWindow.baml
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.g.resources
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.Properties.Resources.resources
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.csproj.GenerateResource.cache
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.csproj.CoreCompileInputs.cache
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.exe
+c:\users\висковатых.наталия\source\repos\WPFStulish\WPFStulish\obj\Debug\WPFStulish.pdb

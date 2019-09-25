@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\bin\Debug\WPFElementMain.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\bin\Debug\WPFElementMain.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\bin\Debug\WPFElementMain.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFElementMain\WPFElementMain\obj\Debug\WPFElementMain.pdb

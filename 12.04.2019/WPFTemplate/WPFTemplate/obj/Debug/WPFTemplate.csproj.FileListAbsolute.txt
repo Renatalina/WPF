@@ -1,0 +1,16 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\bin\Debug\WPFTemplate.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\bin\Debug\WPFTemplate.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\bin\Debug\WPFTemplate.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\WPFTemplate.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFTemplate\WPFTemplate\obj\Debug\App.baml

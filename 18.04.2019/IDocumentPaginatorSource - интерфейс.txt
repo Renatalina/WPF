@@ -1,0 +1,12 @@
+IDocumentPaginatorSource - интерфейс
+ 
+Определяет исходный объект, выполняющий фактическую разбивку содержимого на страницы.
+
+Пространство имен:   System.Windows.Documents
+Сборка:  PresentationCore (в PresentationCore.dll)
+
+Синтаксис
+public interface IDocumentPaginatorSource
+
+Свойства
+ DocumentPaginator	При реализации в производном классе получает объект, выполняющий разбивку содержимого на страницы.

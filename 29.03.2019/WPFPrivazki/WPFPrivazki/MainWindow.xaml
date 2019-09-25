@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFPrivazki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPrivazki"
+        mc:Ignorable="d"
+        xmlns:converter="clr-namespace:WPFPrivazki.Converters"
+        Title="MainWindow" Height="450" Width="290">
+    <Window.Resources>
+        <FontFamily x:Key="ResFont">Comic Sans MS</FontFamily>
+        <converter:MyDoubleConverter x:Key="DoubleConverter"/>
+        <converter:MyColorConverter x:Key="ColorConverter"/>
+        <converter:MyFontFamilyConvertor x:Key="FontFamilyConverter"/>
+    </Window.Resources>
+    <StackPanel Width="250">
+        <Label Content="{Binding ElementName=scroll, Path=Value}"/>
+        <ScrollBar Name="scroll"  Orientation="Horizontal" 
+                   Height="30" Maximum="100" SmallChange="1"/>
+        <TextBox Name="tbScrollValue" Height="30" BorderBrush="Blue"
+                 BorderThickness="2" Text="{Binding ElementName=scroll,
+            Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource DoubleConverter}}"/>
+        <Button Content="Click" Height="200" FontSize="{Binding 
+            ElementName=scroll, Path=Value}" Background="{Binding ElementName=scroll,
+            Path=Value,
+            Converter={StaticResource ColorConverter}}"/>
+
+        <Label Margin="5" HorizontalAlignment="Center"
+               Content="--------------------------------------"/>
+        <TextBlock Text="{Binding Source={x:Static 
+            SystemFonts.IconFontFamily}}"/>
+        <!--это мы просто пишем--> 
+        
+        <TextBlock Text="{Binding Source={StaticResource ResFont}}"/>
+        <!--а здесь мы именно задаем шрифт-->
+        <TextBlock Text="BindingFont" FontSize="16" FontFamily="{Binding ElementName=scroll, 
+            Path=Value, Converter={StaticResource FontFamilyConverter}}"/>
+
+    </StackPanel>
+</Window>

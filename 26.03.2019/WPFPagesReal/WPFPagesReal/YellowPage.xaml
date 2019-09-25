@@ -1,0 +1,27 @@
+﻿<Page x:Class="WPFPagesReal.YellowPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFPagesReal"
+      mc:Ignorable="d" 
+      d:DesignHeight="150" d:DesignWidth="200"
+      Title="YellowPage">
+    <ScrollViewer>
+        <Grid Height="270">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="38*" />
+                <ColumnDefinition Width="245*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Button1" Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button2" Height="23" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button3" Height="23" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button4" Height="23" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button5" Height="23" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button6" Height="23" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button7" Height="23" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Content="Button8" Height="23" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+            <Button Name="BLAST" Content="BLAST" Height="23" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" />
+        </Grid>
+    </ScrollViewer>
+</Page>

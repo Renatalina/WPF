@@ -1,0 +1,224 @@
+https://meet.google.com/psx-stde-zkq
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ <Grid>
+     <Button Name="button1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Content="Hello"/>
+ </Grid>
+
+-----------------------------------------------------------------
+
+        long _start;
+        double _duration = 5000;
+        double _from = 9.0;
+        double _to = 18.0;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            DispatcherTimer timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(50)
+            };
+            timer.Tick += Timer_Tick;
+
+            _start = Environment.TickCount;
+
+            timer.IsEnabled = true;
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            long elapsed = Environment.TickCount - _start;
+            if (elapsed>=_duration)
+            {
+                button1.FontSize = _to;
+                (sender as DispatcherTimer).IsEnabled = false;
+                return;
+            }
+            double increase = _to - _from;
+            button1.FontSize = _from + (increase / (_duration/elapsed));
+        }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <Grid>
+        <Button Name="button1" Height="30" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Content="Hello" MouseEnter="button1_MouseEnter" Click="button1_Click"/>
+    </Grid>
+
+---------------------------------------------------------------------------------------------
+
+        private bool _isCompleted = false;
+
+        private void button1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (!_isCompleted)
+            {
+                _isCompleted = true;
+
+                DoubleAnimation animation = new DoubleAnimation
+                {
+                    Duration = new Duration(TimeSpan.FromSeconds(2)),
+                    From = 0,
+                    To = 360,
+                    //RepeatBehavior=RepeatBehavior.Forever
+                    //RepeatBehavior = new RepeatBehavior(3)
+                    RepeatBehavior = new RepeatBehavior(TimeSpan.FromSeconds(12))
+                };
+                animation.Completed += Animation_Completed;
+
+                RotateTransform rotate = new RotateTransform();
+                button1.RenderTransformOrigin = new Point(0.5, 0.5);
+                button1.RenderTransform = rotate;
+
+                rotate.BeginAnimation(RotateTransform.AngleProperty, animation);
+            }
+        }
+
+        private void Animation_Completed(object sender, EventArgs e)
+        {
+            _isCompleted = false;
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation animation = new DoubleAnimation
+            {
+                From = 1.0,
+                To = 0,
+                AutoReverse = true
+            };
+            button1.BeginAnimation(OpacityProperty, animation);
+        }
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <Window.Resources>
+
+        <Style x:Key="ButtonStyle">
+            <Style.Triggers>
+                <Trigger Property="Button.IsPressed" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="250" Duration="0:0:5" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="90" Duration="0:0:3.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Button Padding="10" Name="cmdGrow" Height="40" Width="160" Style="{StaticResource ButtonStyle}"
+     HorizontalAlignment="Center" VerticalAlignment="Center">
+            Click Me
+        </Button>
+    </Grid>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <StackPanel>
+    <Canvas Width="450" Height="150" HorizontalAlignment="Left">
+        <Rectangle Canvas.Left ="5" Canvas.Top="5" Width="440" Height="120" Stroke="Green" StrokeThickness="2" Fill="Green" />
+            <Rectangle Canvas.Top="0" Canvas.Left="20" Width="20" Height="20" Fill="red" x:Name="First">
+            </Rectangle>
+            <Rectangle Canvas.Top="110" Canvas.Left="20" Width="20" Height="20" Fill="red" x:Name="Second">
+            </Rectangle>
+    </Canvas>
+        <Button Name="Start" Content="Start" HorizontalAlignment="Left">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation 
+            Storyboard.TargetName="First"
+            Storyboard.TargetProperty="(Canvas.Left)"
+            To="435" Duration="0:0:5"
+            AccelerationRatio="0.5" DecelerationRatio="0.4" />
+                            <DoubleAnimation 
+            Storyboard.TargetName="Second"
+            Storyboard.TargetProperty="(Canvas.Left)"
+            To="435" Duration="0:0:5" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+    </StackPanel>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <Grid>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.MouseDown">
+                <BeginStoryboard Name="fadeStoryboardBegin">
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="imgDay" Storyboard.TargetProperty="Opacity"
+        From="1" To="0" Duration="0:0:10" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+
+        <Image Source="night.jpg" />
+        <Image Source="day.jpg" Name="imgDay" />
+    </Grid>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.Triggers>
+            <!--<EventTrigger RoutedEvent="Grid.MouseDown">
+                <BeginStoryboard Name="fadeStoryboardBegin">
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="imgDay" Storyboard.TargetProperty="Opacity"
+        From="1" To="0" Duration="0:0:10" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>-->
+    
+            <EventTrigger SourceName="btnStart" RoutedEvent="Button.Click">
+                <BeginStoryboard Name="fadeStoryboardBegin">
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="imgDay" Storyboard.TargetProperty="Opacity"
+        From="1" To="0" Duration="0:0:10" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnPause" RoutedEvent="Button.Click">
+                <PauseStoryboard BeginStoryboardName="fadeStoryboardBegin"/>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnResume" RoutedEvent="Button.Click">
+                <ResumeStoryboard BeginStoryboardName="fadeStoryboardBegin"/>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnStop" RoutedEvent="Button.Click">
+                <StopStoryboard BeginStoryboardName="fadeStoryboardBegin"/>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnMiddle" RoutedEvent="Button.Click">
+                <SeekStoryboard BeginStoryboardName="fadeStoryboardBegin" Offset="0:0:5"/>
+            </EventTrigger>
+        </Grid.Triggers>
+
+        <Image Source="night.jpg" />
+        <Image Source="day.jpg" Name="imgDay" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="btnStart" Content="Start" Margin="10"/>
+            <Button Name="btnPause" Content="Pause" Margin="10"/>
+            <Button Name="btnResume" Content="Resume" Margin="10"/>
+            <Button Name="btnStop" Content="Stop" Margin="10"/>
+            <Button Name="btnMiddle" Content="Middle" Margin="10"/>
+        </StackPanel>
+    </Grid>

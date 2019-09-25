@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfStyle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStyle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <WrapPanel>
+        <WrapPanel.Resources>
+            <!--<Style x:Key="ButtonStyle">
+                <Setter Property="Button.Background" Value="Blue"/>
+                <Setter Property="Button.Foreground" Value="White"/>
+                <Setter Property="Button.Margin" Value="5"/>
+            </Style>-->
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="Blue"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </WrapPanel.Resources>
+        <Button Content="Button1"/> <!--Style="{StaticResource ButtonStyle}"-->
+        <Button Content="Button2" />
+        <Button Content="Button3">
+            <Button.Style>
+                <Style>
+                    <Setter Property="Button.Background" Value="Green"/>
+                    <Setter Property="Button.Foreground" Value="Red"/>
+                    <Setter Property="Button.Margin" Value="15"/>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Button4" Style="{x:Null}" />
+    </WrapPanel>
+</Window>

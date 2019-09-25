@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\bin\Debug\WPFCompanovka.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\bin\Debug\WPFCompanovka.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\bin\Debug\WPFCompanovka.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFCompanovka\WPFCompanovka\obj\Debug\WPFCompanovka.pdb

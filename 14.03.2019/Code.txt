@@ -1,0 +1,28 @@
+https://meet.google.com/kds-gkdr-ejj
+
++++++++++++++++++++++++++++++++++++++++++
+
+<Window x:Class="WpfApp1.MainWindow"
+       ......
+        Title="MainWindow" MinWidth="150" MaxWidth="600" MaxHeight="600" MinHeight="50" Loaded="Window_Loaded">
+    <DockPanel>
+        <ComboBox DockPanel.Dock="Top" Name="Editing" Width="100" HorizontalAlignment="Center" SelectionChanged="Editing_SelectionChanged"/>
+        <InkCanvas Name="Ink" Background="Yellow"/>
+    </DockPanel>
+</Window>
+
+------------------------------------------------------
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in Enum.GetNames(typeof(InkCanvasEditingMode)).ToList())
+            {
+                Editing.Items.Add(item);
+            }
+            Editing.Text = Editing.Items[0].ToString();
+        }
+
+        private void Editing_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Ink.EditingMode = (InkCanvasEditingMode)Enum.Parse(typeof (InkCanvasEditingMode), Editing.SelectedItem.ToString());
+        }

@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\bin\Debug\WPFPathEvent.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\bin\Debug\WPFPathEvent.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\bin\Debug\WPFPathEvent.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFPathEvent\WPFPathEvent\obj\Debug\WPFPathEvent.pdb

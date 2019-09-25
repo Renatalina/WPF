@@ -1,0 +1,25 @@
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\obj\x86\Debug\Eyes.Form1.resources
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\obj\x86\Debug\Eyes.Properties.Resources.resources
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\obj\x86\Debug\Eyes.csproj.GenerateResource.Cache
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\bin\Debug\Eyes.exe
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\bin\Debug\Eyes.pdb
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\obj\x86\Debug\Eyes.exe
+c:\users\stepbook\documents\visual studio 2010\Projects\Eyes\Eyes\obj\x86\Debug\Eyes.pdb
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\Eyes.exe
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\Eyes.pdb
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\bin\Debug\Eyes.exe
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\bin\Debug\Eyes.pdb
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\Eyes.Form1.resources
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\Eyes.Properties.Resources.resources
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes\Eyes\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\Eyes.exe
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\Eyes.pdb
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\bin\Debug\Eyes.exe
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\bin\Debug\Eyes.pdb
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\Eyes.Form1.resources
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\Eyes.Properties.Resources.resources
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Ш\MA\MyLessons\GDI+\Less_6_Image\Eyes_НЕ_РАБОТАЕТ\Eyes\obj\x86\Debug\GenerateResource.write.1.tlog

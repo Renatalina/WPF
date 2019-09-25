@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\bin\Debug\WPFAnimation3.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\bin\Debug\WPFAnimation3.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\bin\Debug\WPFAnimation3.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFAnimation3\WPFAnimation3\obj\Debug\WPFAnimation3.pdb

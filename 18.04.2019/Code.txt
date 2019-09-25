@@ -1,0 +1,628 @@
+https://meet.google.com/jpf-xstc-yam
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ <Canvas Width="200" Height="150" Background="White" x:Name="Page">
+    <Rectangle Canvas.Left="10" Canvas.Top="10" Width="50" Height="25" Fill="skyblue"
+      Stroke="red" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+      <Rectangle.RenderTransform>
+        <TranslateTransform x:Name="myTransform" X="10" Y="10"/>
+      </Rectangle.RenderTransform>
+
+      <Rectangle.Triggers>
+        <EventTrigger RoutedEvent="Rectangle.Loaded">
+          <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimation RepeatBehavior="Forever" Storyboard.TargetName="myTransform"
+                Storyboard.TargetProperty="X" From="10" To="180" Duration="0:0:0.5" 
+                  AutoReverse="True" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>
+      </Rectangle.Triggers>
+    </Rectangle>
+  </Canvas>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ <Canvas Width="200" Height="150" Background="White" x:Name="Page">
+    <Rectangle Canvas.Left="10" Canvas.Top="10" Width="50" Height="25" Fill="skyblue" 
+        Stroke="red" StrokeThickness="2" RenderTransformOrigin="0.5,0.5">
+      <Rectangle.RenderTransform>
+        <TranslateTransform x:Name="myTransform" X="10" Y="10"/>
+      </Rectangle.RenderTransform>
+      <Rectangle.Triggers>
+        <EventTrigger RoutedEvent="Rectangle.Loaded">
+          <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimation RepeatBehavior="Forever" Storyboard.TargetName="myTransform"
+                Storyboard.TargetProperty="X" From="10" To="180" 
+                       Duration="0:0:0.5" AutoReverse="True" />
+            </Storyboard>
+          </BeginStoryboard>
+          <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimation RepeatBehavior="Forever" Storyboard.TargetName="myTransform"
+                Storyboard.TargetProperty="Y"  From="10" To="130" 
+                       Duration="0:0:0.5" AutoReverse="True" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>
+      </Rectangle.Triggers>
+    </Rectangle>
+  </Canvas>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Window.Resources>
+        
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+      <Setter Property="RenderTransformOrigin" Value="0.5,0.5"></Setter>
+      <Setter Property="Padding" Value="20,15"></Setter>
+      <Setter Property="Margin" Value="2"></Setter>
+      <Setter Property="LayoutTransform">
+        <Setter.Value>
+          <RotateTransform></RotateTransform>
+        </Setter.Value>
+      </Setter>
+      <Style.Triggers>
+        <EventTrigger RoutedEvent="Button.MouseEnter">
+          <EventTrigger.Actions>
+            <BeginStoryboard Name="rotateStoryboardBegin">
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetProperty="LayoutTransform.Angle"
+                 To="360" Duration="0:0:0.8" RepeatBehavior="Forever"></DoubleAnimation>
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Button.MouseLeave">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetProperty="LayoutTransform.Angle"
+                   Duration="0:0:0.2"></DoubleAnimation>
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+      </Style.Triggers>        
+    </Style>
+           
+  </Window.Resources>
+  <StackPanel Margin="5">
+    <Button>One</Button>
+    <Button>Two</Button>
+    <Button>Three</Button>
+    <Button>Four</Button>
+    <TextBlock Name="lbl" Margin="5"></TextBlock>
+  </StackPanel>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Rectangle Name="myrect" Width="350" Height="250">
+    <Rectangle.Fill>
+        <SolidColorBrush x:Name="brush" Color="Red"/>
+    </Rectangle.Fill>
+    <Rectangle.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard RepeatBehavior="Forever">
+                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Red" To="Green" 
+                      Duration="0:0:1" BeginTime="0:0:0"/>
+                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Green" To="Blue" 
+                      Duration="0:0:1" BeginTime="0:0:1"/>
+                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Blue" To="Yellow" 
+                      Duration="0:0:1" BeginTime="0:0:2"/>
+                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Yellow" 
+                      To="Red" Duration="0:0:1" BeginTime="0:0:3"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Rectangle.Triggers>
+</Rectangle>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Rectangle Name="myrect" Width="350" Height="250">
+    <Rectangle.Fill>
+        <LinearGradientBrush x:Name="brush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop x:Name="stop1" Offset="0" Color="Red"/>
+            <GradientStop x:Name="stop2" Offset="0.5" Color="Green"/>
+            <GradientStop x:Name="stop3" Offset="1" Color="Blue"/>
+        </LinearGradientBrush>
+    </Rectangle.Fill>
+    <Rectangle.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard RepeatBehavior="Forever">
+                    <ColorAnimation Storyboard.TargetName="stop1" Storyboard.TargetProperty="Color" 
+                       From="Red" To="Green" Duration="0:0:1" BeginTime="0:0:0"/>
+                    <ColorAnimation Storyboard.TargetName="stop1" Storyboard.TargetProperty="Color" 
+                       From="Green" To="Blue" Duration="0:0:1" BeginTime="0:0:0.5"/>
+                    <ColorAnimation Storyboard.TargetName="stop1" Storyboard.TargetProperty="Color" 
+                       From="Blue" To="Red" Duration="0:0:1" BeginTime="0:0:1"/>
+                    <ColorAnimation Storyboard.TargetName="stop2" Storyboard.TargetProperty="Color" 
+                       From="Green" To="Blue" Duration="0:0:1" BeginTime="0:0:0"/>
+                    <ColorAnimation Storyboard.TargetName="stop2" Storyboard.TargetProperty="Color" 
+                       From="Blue" To="Red" Duration="0:0:1" BeginTime="0:0:0.5"/>
+                    <ColorAnimation Storyboard.TargetName="stop2" Storyboard.TargetProperty="Color" 
+                       From="Red" To="Green" Duration="0:0:1" BeginTime="0:0:1"/>
+                    <ColorAnimation Storyboard.TargetName="stop3" Storyboard.TargetProperty="Color" 
+                       From="Blue" To="Red" Duration="0:0:1" BeginTime="0:0:0"/>
+                    <ColorAnimation Storyboard.TargetName="stop3" Storyboard.TargetProperty="Color" 
+                       From="Red" To="Green" Duration="0:0:1" BeginTime="0:0:0.5"/>
+                    <ColorAnimation Storyboard.TargetName="stop3" Storyboard.TargetProperty="Color" 
+                       From="Green" To="Blue" Duration="0:0:1" BeginTime="0:0:1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Rectangle.Triggers>
+</Rectangle>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  <Window.Triggers>
+    <EventTrigger RoutedEvent="Window.Loaded">
+      <BeginStoryboard>
+        <Storyboard AutoReverse="True" RepeatBehavior="Forever">
+          <ColorAnimation Storyboard.TargetProperty="Background.Color" To="White" />
+          <ColorAnimation Storyboard.TargetName="rect" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" To="Firebrick" />
+        </Storyboard>
+      </BeginStoryboard>
+    </EventTrigger>
+  </Window.Triggers>
+  <Rectangle x:Name="rect" Width="100" Height="100" Fill="WhiteSmoke" />
+  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ <Canvas>
+    <Rectangle Canvas.Left ="5" Canvas.Top="5" Width="190" Height="90" Stroke="green" 
+      StrokeThickness="2" Fill="Transparent" />
+    <Rectangle Canvas.Top="40" Width="20" Height="20" Fill="red" x:Name="myRectangle">
+      <Rectangle.Triggers>
+        <EventTrigger RoutedEvent="Rectangle.Loaded">
+          <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimationUsingKeyFrames Storyboard.TargetName="myRectangle" 
+                   Storyboard.TargetProperty="(Canvas.Left)" >
+		<LinearDoubleKeyFrame KeyTime="0:0:1" Value="100" />
+                <LinearDoubleKeyFrame KeyTime="0:0:3" Value="180" />
+              </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>
+      </Rectangle.Triggers>
+    </Rectangle>
+  </Canvas>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ 
+<StackPanel> 
+<Button Name="myButton" Height="40" 
+FontSize="16pt" FontFamily="Verdana" Width = "100"> 
+<Button.Triggers> 
+<EventTrigger RoutedEvent="Button.Loaded"> 
+<BeginStoryboard> 
+<Storyboard> 
+<StringAnimationUsingKeyFrames RepeatBehavior = "Forever" 
+Storyboard.TargetName="myButton" 
+Storyboard.TargetProperty="Content" 
+Duration="0:0:3"> 
+<DiscreteStringKeyFrame Value="" KeyTime="0:0:0" /> 
+<DiscreteStringKeyFrame Value="O" KeyTime="0:0:1" /> 
+<DiscreteStringKeyFrame Value="OK" KeyTime="0:0:1.5" /> 
+<DiscreteStringKeyFrame Value="OK!" KeyTime="0:0:2" /> 
+</StringAnimationUsingKeyFrames> 
+</Storyboard> 
+</BeginStoryboard> 
+</EventTrigger> 
+</Button.Triggers> 
+</Button> 
+</StackPanel>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  <Window.Triggers>
+    <EventTrigger RoutedEvent="Window.Loaded">
+      <EventTrigger.Actions>
+        <BeginStoryboard>
+          <Storyboard>
+            <PointAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="Fill.GradientOrigin"
+                                           RepeatBehavior="Forever" >
+              <LinearPointKeyFrame Value="0.7,0.3" KeyTime="0:0:0"></LinearPointKeyFrame>
+              <LinearPointKeyFrame Value="0.3,0.7" KeyTime="0:0:5"></LinearPointKeyFrame>
+              <LinearPointKeyFrame Value="0.5,0.9" KeyTime="0:0:8"></LinearPointKeyFrame>
+              <LinearPointKeyFrame Value="0.9,0.6" KeyTime="0:0:10"></LinearPointKeyFrame>
+              <LinearPointKeyFrame Value="0.8,0.2" KeyTime="0:0:12"></LinearPointKeyFrame>
+              <LinearPointKeyFrame Value="0.7,0.3" KeyTime="0:0:14"></LinearPointKeyFrame>
+
+              <DiscretePointKeyFrame Value="0.7,0.3" KeyTime="0:0:20"></DiscretePointKeyFrame>
+              <DiscretePointKeyFrame Value="0.3,0.7" KeyTime="0:0:25"></DiscretePointKeyFrame>
+              <DiscretePointKeyFrame Value="0.5,0.9" KeyTime="0:0:28"></DiscretePointKeyFrame>
+              <DiscretePointKeyFrame Value="0.9,0.6" KeyTime="0:0:20"></DiscretePointKeyFrame>
+              <DiscretePointKeyFrame Value="0.8,0.2" KeyTime="0:0:22"></DiscretePointKeyFrame>
+              <DiscretePointKeyFrame Value="0.7,0.3" KeyTime="0:0:24"></DiscretePointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+          
+              
+            <ColorAnimation Storyboard.TargetName="ellipse" Storyboard.TargetProperty="Fill.GradientStops[1].Color"
+              To="Black"  Duration="0:0:10"
+              AutoReverse="True" RepeatBehavior="Forever"></ColorAnimation>
+          </Storyboard>
+        </BeginStoryboard>
+      </EventTrigger.Actions>
+    </EventTrigger>
+  </Window.Triggers>
+    <Grid>
+      <Ellipse Name="ellipse" Margin="5" Grid.Row="1" Stretch="Uniform">
+        <Ellipse.Fill>
+          <RadialGradientBrush
+             RadiusX="1" RadiusY="1" GradientOrigin="0.7,0.3">
+            <GradientStop Color="White" Offset="0" ></GradientStop>
+            <GradientStop Color="Blue" Offset="1" ></GradientStop>            
+          </RadialGradientBrush>
+
+        </Ellipse.Fill>
+      </Ellipse>
+    </Grid>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Window.Resources> 
+        <PathGeometry x:Key="path">
+            <PathFigure IsClosed="True">
+                <ArcSegment Point="100,200" Size="15,10" SweepDirection="Clockwise" />
+                <ArcSegment Point="400,50" Size="5,5" />
+            </PathFigure>
+        </PathGeometry>
+    </Window.Resources>
+    
+    <Canvas>        
+        <Path Stroke="Red" StrokeThickness="2" Data="{StaticResource ResourceKey=path}" Canvas.Left="10" Canvas.Top="10" Visibility="Hidden"  />
+        <Ellipse Canvas.Left="10" Canvas.Top="10" Height="20" Width="20" Fill="LightSteelBlue" Name="myEllipse">
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Ellipse.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingPath Storyboard.TargetName ="myEllipse" Storyboard.TargetProperty="(Canvas.Left)"
+                                                  PathGeometry="{StaticResource ResourceKey=path}" Duration="0:0:5"
+                                                  RepeatBehavior="Forever" Source="X" />
+                            <DoubleAnimationUsingPath Storyboard.TargetName ="myEllipse" Storyboard.TargetProperty="(Canvas.Top)"
+                                                  PathGeometry="{StaticResource ResourceKey=path}" Duration="0:0:5"
+                                                  RepeatBehavior="Forever" Source="Y" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+    </Canvas>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        public static extern bool DeleteObject(IntPtr hObject);
+
+        Bitmap _bitmap;
+        BitmapSource _source;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            _source = GetSource();
+            flagImage.Source = _source;
+            ImageAnimator.Animate(_bitmap, OnFrameChanged);
+        }
+
+                
+        private BitmapSource GetSource()
+        {
+            try
+            {
+                if (_bitmap == null)
+                {
+                    _bitmap = new Bitmap(Application.GetResourceStream(new Uri("flag.gif", UriKind.Relative)).Stream);
+                }
+                IntPtr handle = IntPtr.Zero;
+                handle = _bitmap.GetHbitmap();
+
+                BitmapSource bitmapSource = Imaging.CreateBitmapSourceFromHBitmap(handle, IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+
+                // надо удалить дескриптор точечного рисунка, который создает функция Bitmap.GetHbitmap иначе память, занятая им, не освободится
+                DeleteObject(handle);
+
+                return bitmapSource;
+            }
+            catch { }
+            return _source;
+        }
+
+        private void OnFrameChanged(object sender, EventArgs e)
+        {
+            Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(FrameUpdatedCallback));
+        }
+
+        private void FrameUpdatedCallback()
+        {
+            ImageAnimator.UpdateFrames();
+            if (_source == null)
+            {
+                _source.Freeze();
+            }
+            _source = GetSource();
+            flagImage.Source = _source;
+            InvalidateVisual();
+        }
+
+http://losev-al.blogspot.com/2013/02/gif-wpf.html
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ <Window.Resources>
+        <Style x:Key="prgBar" TargetType="ProgressBar">
+            <Setter Property="Orientation" Value="Vertical" />
+            <Setter Property="Maximum" Value="229" />
+
+            <Setter Property ="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ProgressBar">
+                        <Viewbox>
+                            <Canvas Width="70" Height="280">
+                                <Path Fill="Transparent" Stroke="SteelBlue" StrokeThickness="2">
+                                    <Path.Data>
+                                        <CombinedGeometry GeometryCombineMode="Union">
+                                            <CombinedGeometry.Geometry1>
+                                                <RectangleGeometry RadiusX="5" RadiusY="5" Rect="25, 10, 18, 250"/>
+                                            </CombinedGeometry.Geometry1>
+
+                                            <CombinedGeometry.Geometry2>
+                                                <EllipseGeometry RadiusX="20" RadiusY="20" Center="34, 250" />
+                                            </CombinedGeometry.Geometry2>
+                                        </CombinedGeometry>
+                                    </Path.Data>
+                                </Path>
+
+                                <Rectangle Name="recH" Height="0" Width ="16" RadiusX="4" RadiusY="5" Canvas.Left="26" Canvas.Top="240" >
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="-1"/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                    <Rectangle.LayoutTransform>
+                                        <RotateTransform Angle="360"/>
+                                    </Rectangle.LayoutTransform>
+                                    <Rectangle.Fill>
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="Red" Offset="0" />
+                                            <GradientStop Color="White" Offset="0.25" />
+                                            <GradientStop Color="Red" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <Ellipse Height="38" Width ="38" Canvas.Left="15" Canvas.Top="231">
+                                    <Ellipse.Fill>
+                                        <RadialGradientBrush RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.3, 0.3">
+                                            <GradientStop Color="White" Offset="0" />
+                                            <GradientStop Color="Red" Offset="1" />
+                                        </RadialGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </Canvas>
+                        </Viewbox>
+
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=btnStart, Path=Visibility}" Value="Hidden">
+                                <Setter TargetName="recH" Property="Height" Value="{Binding ElementName=prgTemp, Path=Value}" />
+                            </DataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <ProgressBar Name="prgTemp" Style="{StaticResource prgBar}" />
+
+        <Button Name="btnStart" Grid.Column="1" Height="30" Click="Button_Click">Click</Button>
+    </Grid>
+
+-------------------------------------------------------------------------------------------
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation dAni = new DoubleAnimation(prgTemp.Maximum, new Duration(TimeSpan.FromSeconds(2)));
+            prgTemp.BeginAnimation(ProgressBar.ValueProperty, dAni);
+            (sender as Button).Visibility = Visibility.Hidden;
+        }
+    }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<FlowDocumentScrollViewer>
+     <FlowDocument>
+
+         <Paragraph>Требования:</Paragraph>
+         <List>
+            <ListItem>
+                <Paragraph>C#,WPF,ADO.NET</Paragraph>
+            </ListItem>
+                    
+            <ListItem>
+                <Paragraph>Комуникабельность</Paragraph>
+            </ListItem>
+         </List>
+                
+         <Paragraph>Умения:</Paragraph>
+         <List MarkerStyle="Decimal">
+             <ListItem>
+                <Paragraph>Пользоваться ножом и вилкой</Paragraph>
+             </ListItem>
+             <ListItem>
+                <Paragraph>Windows,Linux</Paragraph>
+             </ListItem>
+             <ListItem>
+                <Paragraph>Всякий текст</Paragraph>
+             </ListItem>
+         </List>
+                
+         <Paragraph>Умения:</Paragraph>
+         <List MarkerStyle="Square" MarkerOffset="50">
+             <ListItem>
+                 <Paragraph>Пользоваться ножом и вилкой</Paragraph>
+             </ListItem>
+             <ListItem>
+                 <Paragraph>Windows,Linux</Paragraph>
+             </ListItem>
+             <ListItem>
+                 <Paragraph>Всякий текст</Paragraph>
+             </ListItem>
+         </List>
+                
+     </FlowDocument>
+</FlowDocumentScrollViewer>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <FlowDocumentPageViewer>
+            <FlowDocument>
+                <Paragraph><Run Foreground="Blue">Города Украины</Run></Paragraph>
+                <Table FontSize="12">
+                    <TableRowGroup>
+                        <TableRow FontWeight="bold">
+                            <TableCell>
+                                <Paragraph>№</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Имя</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Население</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>КОД</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>1</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Киев</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2 600 000</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>+38(044)XXXXXXX</Paragraph>
+                            </TableCell>
+                        </TableRow>                        
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+           </FlowDocumentPageViewer>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<FlowDocumentScrollViewer>
+    <FlowDocument Background="YellowGreen">
+       <Section Background="Yellow">
+           <Paragraph>xxx - На выходных занят?</Paragraph>
+           <Paragraph>yyy - Да агрофитнесс!</Paragraph>
+           <Paragraph>--------------------</Paragraph>
+           <Paragraph>xxx: мне вон каждый раз хочется спросить одних клиентов, зачем они покупают нечетное количество коннекторов на витую пару</Paragraph>
+           <Paragraph>--------------------</Paragraph>
+           <Paragraph>xxx: Я изменяла ему пару раз, но это был единственный раз в жизни!</Paragraph>
+        </Section>
+        <Section Background="Yellow">
+            <Paragraph>
+                <Hyperlink NavigateUri="www.bash.org" Click="Hyperlink_Click">Bash.org</Hyperlink>
+            </Paragraph>
+        </Section>
+    </FlowDocument>
+</FlowDocumentScrollViewer>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>Меня зовут
+                    <InlineUIContainer>
+                        <TextBox Width="100"></TextBox>
+                    </InlineUIContainer>
+                мне <InlineUIContainer>
+                        <TextBox Width="30"></TextBox>
+                    </InlineUIContainer>
+                          лет!
+                </Paragraph>
+                
+                <Paragraph>Я
+                    <InlineUIContainer>
+                        <ComboBox Width="100">
+                            <ComboBoxItem>Буду</ComboBoxItem>
+                            <ComboBoxItem>Не буду</ComboBoxItem>
+                        </ComboBox>
+                    </InlineUIContainer> учиться на
+                    <InlineUIContainer>
+                        <Slider Name="slider1" Minimum="1" Maximum="12" Width="200"></Slider>
+                    </InlineUIContainer>
+                </Paragraph>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <FlowDocumentScrollViewer>
+        <FlowDocument IsOptimalParagraphEnabled="True">
+            <Paragraph FontSize="24" FontWeight="BOLD">Сочинение на тему «Кем я хочу стать когда я буду большим»</Paragraph>
+            <Paragraph>
+                <Floater Width="100" HorizontalAlignment="Left">
+                    <BlockUIContainer>
+                        <Image Source="Apollo.jpg"></Image>
+                    </BlockUIContainer>
+                </Floater>
+                
+Тарас 7 лет
+
+Я хочу стать программистом, когда выросту большим, потому что это классная работа и простая. Поэтому в наше время столько программистов и все время становится больше. 
+
+Программистам не нужно ходить в школу, им нужно учиться читать на компьютерном языке, что бы они могли с компьютером разговаривать. Думаю, что они должны уметь читать тоже, что бы знать в чем дело, когда все напереполох. 
+
+Программисты должны быть смелыми, что бы не пугаться, когда все перепуталось так что никто не разберет, или если придется разговаривать на английском языке по-иностранному, что бы знать, что надо делать. 
+
+У программистов должно быть хорошее зрение, что бы видеть сквозь одежду и что бы не бояться секретарш, потому что с ними приходиться работать. 
+
+Еще мне нравитса зарплата, которую программисты получают. Они получают столько денег, что не успевают их все тратить. Это происходит потому, что все считают работу программиста трудной, кроме программистов, которые знают, как это просто. 
+
+Нет ничего такого, что бы мне не понравилось, кроме того что девочкам нравятся программисты и все хотят выйти за них замуж, и поэтому женщин надо гнать, что бы не мешали работать. 
+
+Надеюсь, что у меня нет аллергии на офисную пыль, потому что на нашу собаку у меня аллергия. Eсли у меня будет аллергия на офисную пыль, программиста из меня не получится и придется искать настоящую работу.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>

@@ -1,0 +1,10 @@
+UriKind - перечисление
+
+Определяет виды Uri для Uri.IsWellFormedUriString(String, UriKind) и нескольких методов Uri.Uri methods.
+
+Пространство имен:  System
+
+Члены
+ Absolute	Данный URI является абсолютным.
+ Relative	Данный URI является относительным.
+ RelativeOrAbsolute	Вид URI не определен.

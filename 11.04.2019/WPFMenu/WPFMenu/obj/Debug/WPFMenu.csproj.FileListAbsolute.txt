@@ -1,0 +1,15 @@
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\bin\Debug\WPFMenu.exe.config
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\bin\Debug\WPFMenu.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\bin\Debug\WPFMenu.pdb
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\MainWindow.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\App.g.cs
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu_MarkupCompile.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu_MarkupCompile.lref
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\MainWindow.baml
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.g.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.Properties.Resources.resources
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.csproj.GenerateResource.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.exe
+C:\Users\Висковатых.Наталия\source\repos\WPFMenu\WPFMenu\obj\Debug\WPFMenu.pdb

@@ -1,0 +1,45 @@
+https://meet.google.com/axs-ooow-gfi
+
+------------------------------------------------------------------------------------------
+
+<TextBlock> 
+      <TextBlock.Text> 
+      <Binding Path="Title"> 
+        <Binding.RelativeSource> 
+          <RelativeSource Mode="FindAncestor" AncestorType="{x:Type Window}" /> 
+        </Binding.RelativeSource> 
+      </Binding> 
+      </TextBlock.Text>
+    </TextBlock>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.RowSpan="3" Name="dgStudents" AutoGenerateColumns="False" PreviewMouseLeftButtonUp="dgStudents_PreviewMouseLeftButtonUp">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя" />
+                <DataGridTextColumn Header="Фамилия" />
+                <DataGridTextColumn Header="Возраст" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Column="1" Content="Фамилия: "/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Имя: "/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Возраст: "/>
+        <TextBox Grid.Column="2"/>
+        <TextBox Grid.Row="1" Grid.Column="2"/>
+        <TextBox Grid.Row="2" Grid.Column="2" />
+        <Button  Grid.Row="3" Grid.ColumnSpan="3" Name="change" Content="Change" Click="change_Click"/>
+        <Button  Grid.Row="4" Grid.ColumnSpan="3" Name="add" Content="Add" Click="add_Click"/>
+    </Grid>
